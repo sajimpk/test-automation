@@ -5,10 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
+
 driver = webdriver.Chrome()  
 driver.maximize_window()  
 driver.get("https://www.google.com")
-element_search_box = driver.find_element(By.NAME, "q").send_keys("a")
+element_search_box = driver.find_element(By.NAME, "q").send_keys("Start")
 driver.find_element(By.NAME, "q").submit()
 
 find = driver.find_element(By.NAME, "q").clear()
